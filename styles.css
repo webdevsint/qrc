@@ -98,8 +98,8 @@ main button {
 .buttons {
   display: none;
   position: absolute;
-  left: 233.5px;
-  bottom: 105px;
+  left: 213.5px;
+  bottom: 130px;
   transform: rotate(270deg);
 }
 .buttons button {
