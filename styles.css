@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Silkscreen", cursive;
+}
+
+button {
+  border: 2px solid black;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a {
+  color: #0279ef;
+}
+
+.disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.header {
+  padding: 16px;
+  background: #00aeff;
+  -webkit-box-shadow: 0 2px 3px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 2px 3px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 2px 3px rgba(57, 63, 72, 0.3);
+}
+
+.header h2 {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-left: 13px;
+}
+
+section {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.sidebar {
+  padding: 1rem;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  margin: 3px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+main input {
+  padding: 0 5px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+main button {
+  padding: 5px;
+  background: #0080ff;
+}
+
+.qr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.qr,
+#qrbox,
+.qr p {
+  display: none;
+}
+
+.buttons {
+  display: none;
+  position: absolute;
+  left: 233.5px;
+  bottom: 105px;
+  transform: rotate(270deg);
+  /* display: flex; */
+}
+.buttons button {
+  text-align: justify;
+  padding: 2px 20px;
+  outline: none;
+}
+
+.buttons .download {
+  margin-top: 0px;
+  background: #0080ff;
+  margin-right: 3px;
+}
+
+.buttons .delete {
+  margin-top: 0px;
+  background: #ff3636;
+}
+
+.footer {
+  background: #00aeff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}

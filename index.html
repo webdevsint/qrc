@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>qrc</title>
+    <script src="./main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2>QR<sup>code</sup></h2>
+    </div>
+
+    <section>
+      <div class="sidebar">
+        <a href="#">- create</a>
+        <a href="#" class="disabled">- decode</a>
+      </div>
+      <hr />
+      <main>
+        <label for="name">text input:</label>
+        <input type="text" name="input" placeholder="....." />
+
+        <button class="submit" onclick="submitHandler()">create qrcode</button>
+      </main>
+    </section>
+
+    <div class="qr">
+      <p class="status">working....</p>
+      <div id="qrbox"></div>
+    </div>
+
+    <div class="buttons">
+      <button class="download">download</button>
+      <button class="delete" onclick="deleteHandler()">delete</button>
+    </div>
+
+    <div style="padding: 1rem;">
+        qrcode decoder coming soon!
+    </div>
+
+    <div class="footer">
+      Nehan <br />Yaser <br />Khan <br />
+      2022
+    </div>
+  </body>
+</html>
