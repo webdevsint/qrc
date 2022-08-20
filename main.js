@@ -28,9 +28,8 @@ function download(url) {
 
 function submitHandler() {
   if (input.value.length > 0) {
-    qrbox.innerHTML = "";
-    buttons.style.display = "none";
-
+    deleteHandler();
+    
     qr.style.display = "block";
     status.style.display = "block";
 
