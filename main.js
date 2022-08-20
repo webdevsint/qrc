@@ -35,9 +35,9 @@ function submitHandler() {
 
     setTimeout(() => {
 
-      if (screen.width < 457) {
+      if (screen.width < 532) {
         document.querySelector('.footer').style.position = 'relative'
-      } else if (screen.width > 457) {
+      } else if (screen.width > 532) {
         document.querySelector('.footer').style.position = 'absolute'
       }
 
@@ -59,9 +59,9 @@ function submitHandler() {
 }
 
 function deleteHandler() {
-  if (screen.width < 457) {
+  if (screen.width < 532) {
     document.querySelector('.footer').style.position = 'absolute'
-  } else if (screen.width > 457) {
+  } else if (screen.width > 532) {
     document.querySelector('.footer').style.position = 'absolute'
   }
 
