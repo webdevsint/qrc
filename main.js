@@ -35,6 +35,13 @@ function submitHandler() {
     status.style.display = "block";
 
     setTimeout(() => {
+
+      if (screen.width < 457) {
+        document.querySelector('.footer').style.position = 'relative'
+      } else if (screen.width > 457) {
+        document.querySelector('.footer').style.position = 'absolute'
+      }
+
       status.style.display = "none";
 
       generateQRCode(input.value);
@@ -53,6 +60,12 @@ function submitHandler() {
 }
 
 function deleteHandler() {
+  if (screen.width < 457) {
+    document.querySelector('.footer').style.position = 'absolute'
+  } else if (screen.width > 457) {
+    document.querySelector('.footer').style.position = 'absolute'
+  }
+
   qrbox.innerHTML = "";
   buttons.style.display = "none";
   qr.style.display = "none";
