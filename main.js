@@ -11,7 +11,7 @@ function generateQRCode(text) {
     text: text,
     width: 300,
     height: 300,
-    colorDark: "#000000",
+    colorDark: "#001830",
     colorLight: "#ffffff",
     correctLevel: QRCode.CorrectLevel.H,
   });
@@ -29,19 +29,19 @@ function download(url) {
 function submitHandler() {
   if (input.value.length > 0) {
     deleteHandler();
-    
+
     qr.style.display = "block";
     status.style.display = "block";
 
     setTimeout(() => {
-
       if (screen.width < 532) {
-        document.querySelector('.footer').style.position = 'relative'
+        document.querySelector(".footer").style.position = "relative";
       } else if (screen.width > 532) {
-        document.querySelector('.footer').style.position = 'absolute'
+        document.querySelector(".footer").style.position = "absolute";
       }
 
       status.style.display = "none";
+      qrbox.innerHTML = "";
 
       generateQRCode(input.value);
 
@@ -60,9 +60,9 @@ function submitHandler() {
 
 function deleteHandler() {
   if (screen.width < 532) {
-    document.querySelector('.footer').style.position = 'absolute'
+    document.querySelector(".footer").style.position = "absolute";
   } else if (screen.width > 532) {
-    document.querySelector('.footer').style.position = 'absolute'
+    document.querySelector(".footer").style.position = "absolute";
   }
 
   qrbox.innerHTML = "";
