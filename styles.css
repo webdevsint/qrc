@@ -22,6 +22,7 @@ button:hover {
 a {
   color: #0c6fd2;
   font-size: large;
+  cursor: pointer;
 }
 
 .disabled {
@@ -130,6 +131,15 @@ main button {
   border-top: 2px solid black;
   border-left: 2px solid black;
   font-size: large;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
 }
 
 @media screen and (max-width: 532px) {

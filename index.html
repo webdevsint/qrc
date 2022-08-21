@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>qrc</title>
     <script src="./main.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <div class="header">
@@ -16,7 +19,7 @@
 
     <section>
       <div class="sidebar">
-        <a href="#">- create</a>
+        <a href="/">- create</a>
         <a href="#" class="disabled">- decode</a>
       </div>
       <hr />
@@ -24,7 +27,7 @@
         <label for="name">text input:</label>
         <input type="text" name="input" placeholder="....." />
 
-        <button class="submit" onclick="submitHandler(); navigator.vibrate(200);">create qrcode</button>
+        <button class="submit" onclick="submitHandler()">create qrcode</button>
       </main>
     </section>
 
@@ -34,13 +37,15 @@
     </div>
 
     <div class="buttons">
-      <button class="download" onclick="navigator.vibrate(200);">download</button>
-      <button class="delete" onclick="deleteHandler(); navigator.vibrate(200);">delete</button>
+      <button class="download" onclick="navigator.vibrate(200)">
+        download
+      </button>
+      <button class="delete" onclick="deleteHandler()">delete</button>
     </div>
 
     <div class="footer">
-      Nehan <br />Yaser <br />Khan <br />
-      2022
+      <a href="https://instagram.com/nehan_yaser/" target="_blank">Nehan <br />Yaser <br />Khan <br />
+        2022</a>
     </div>
   </body>
 </html>

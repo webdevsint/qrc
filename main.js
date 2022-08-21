@@ -27,6 +27,8 @@ function download(url) {
 }
 
 function submitHandler() {
+  navigator.vibrate(200);
+
   if (input.value.length > 0) {
     deleteHandler();
 
@@ -59,6 +61,8 @@ function submitHandler() {
 }
 
 function deleteHandler() {
+  navigator.vibrate(200);
+
   if (screen.width < 532) {
     document.querySelector(".footer").style.position = "absolute";
   } else if (screen.width > 532) {
