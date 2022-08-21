@@ -24,7 +24,7 @@
         <label for="name">text input:</label>
         <input type="text" name="input" placeholder="....." />
 
-        <button class="submit" onclick="submitHandler()">create qrcode</button>
+        <button class="submit" onclick="submitHandler(); navigator.vibrate(200);">create qrcode</button>
       </main>
     </section>
 
@@ -34,8 +34,8 @@
     </div>
 
     <div class="buttons">
-      <button class="download">download</button>
-      <button class="delete" onclick="deleteHandler()">delete</button>
+      <button class="download" onclick="navigator.vibrate(200);">download</button>
+      <button class="delete" onclick="deleteHandler(); navigator.vibrate(200);">delete</button>
     </div>
 
     <div class="footer">
