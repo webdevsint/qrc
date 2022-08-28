@@ -58,6 +58,7 @@ function submitHandler() {
     }, 1000);
   } else {
     alert("Input field is empty!");
+    document.querySelector('.submit').classList.remove("disabled");
   }
 }
 
