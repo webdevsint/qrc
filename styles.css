@@ -25,6 +25,10 @@ a {
   cursor: pointer;
 }
 
+input {
+  border-radius: 0;
+}
+
 .disabled {
   opacity: 0.8;
   pointer-events: none;
@@ -164,6 +168,10 @@ main button {
     display: none;
   }
 
+  .decoded-container div hr {
+    display: block;
+  }
+
   .qr {
     position: relative;
   }
@@ -190,4 +198,40 @@ main button {
     right: 0;
     margin-top: 1rem;
   }
+}
+
+
+/* decoder.html */
+
+#qrcode {
+  display: none;
+}
+
+.file-select {
+  background: #0080ff;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+}
+
+.file-select:hover {
+  background: #0080ffd0;
+}
+
+.decoded-container {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.qr-preview {
+  width: 100%;
+}
+
+
+.sidebar a {
+  min-width: 100px;
+}
+
+#decoded {
+  display: none;
 }
