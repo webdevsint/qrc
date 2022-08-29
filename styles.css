@@ -200,7 +200,6 @@ main button {
   }
 }
 
-
 /* decoder.html */
 
 #qrcode {
@@ -224,9 +223,10 @@ main button {
 }
 
 .qr-preview {
+  display: none;
   width: 100%;
+  margin: 1rem 0;
 }
-
 
 .sidebar a {
   min-width: 100px;

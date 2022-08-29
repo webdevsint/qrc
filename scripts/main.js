@@ -28,7 +28,7 @@ function download(url) {
 
 function submitHandler() {
   navigator.vibrate(200);
-  document.querySelector('.submit').classList.add("disabled");
+  document.querySelector(".submit").classList.add("disabled");
 
   if (input.value.length > 0) {
     deleteHandler();
@@ -44,7 +44,7 @@ function submitHandler() {
       }
 
       status.style.display = "none";
-      document.querySelector('.submit').classList.remove("disabled");
+      document.querySelector(".submit").classList.remove("disabled");
 
       generateQRCode(input.value);
 
@@ -57,8 +57,8 @@ function submitHandler() {
       buttons.style.display = "flex";
     }, 1000);
   } else {
+    document.querySelector(".submit").classList.remove("disabled");
     alert("Input field is empty!");
-    document.querySelector('.submit').classList.remove("disabled");
   }
 }
 

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>qrc</title>
     <script src="./scripts/decoder.js" defer></script>
-    <script src="./scripts/decoder.min.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -16,35 +15,37 @@
 
     <section>
       <div class="sidebar">
-        <a href="/">- create</a>
-        <a href="/decoder.html">- decode</a>
+        <a href="/qrc/">- create</a>
+        <a href="/qrc/decoder.html">- decode</a>
       </div>
       <hr />
-      <main class="decode-main disabled">
-        <label for="qrcode" class="file-select" 
+      <main class="decode-main">
+        <label for="qrcode" class="file-select"
           ><center>upload a qr code</center></label
         >
-        <input type="file" name="qrcode" id="qrcode" />
+        <input
+          type="file"
+          name="qrcode"
+          id="qrcode"
+          accept="image/png, image/jpeg"
+        />
 
-        <div class="decoded-container">
+        <div class="decoded-container" style="max-width: 450px">
           preview: <br />
-          <br />
-          <img
-            alt="qr code"
-            class="qr-preview"
-          />
+          <img alt="qr code" class="qr-preview" />
 
-          <div style="max-width: 305px; margin-top: 1rem;" id="decoded">
-            decoded text: <hr style="margin: 1rem 0;">
-      
-            <p  id="decoded-text"></p>
+          <p class="status" style="margin: 1rem 0; display: none">working...</p>
+
+          <div style="max-width: 305px" id="decoded">
+            decoded text:
+            <hr style="margin: 1rem 0" />
+
+            <p id="decoded-text"></p>
           </div>
         </div>
 
-        <button class="decode-btn">decode</button>
+        <button class="decode-btn" onclick="submitHandler()">decode</button>
       </main>
-
-      
     </section>
 
     <!-- <div class="footer">
