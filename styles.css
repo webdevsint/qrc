@@ -233,10 +233,16 @@ main button {
 }
 
 #decoded {
+  width: 100%;
   display: none;
 }
 
 
 .decode-btn {
   display: none;
+}
+
+.copy-decrypted {
+  margin-top: 1rem;
+  width: 100%;
 }

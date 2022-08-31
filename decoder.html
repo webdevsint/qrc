@@ -15,8 +15,8 @@
 
     <section>
       <div class="sidebar">
-        <a href="/">- create</a>
-        <a href="/decoder.html">- decode</a>
+        <a href="/qrc/">- create</a>
+        <a href="/qrc/decoder.html">- decode</a>
       </div>
       <hr />
       <main class="decode-main">
@@ -36,11 +36,13 @@
 
           <p class="status" style="margin: 1rem 0; display: none">working...</p>
 
-          <div style="max-width: 305px" id="decoded">
+          <div id="decoded">
             decoded text:
             <hr style="margin: 1rem 0" />
 
-            <p id="decoded-text" style="max-width: 100%; word-wrap: break-word;"></p>
+            <p id="decoded-text" style="word-wrap: break-word;"></p>
+
+            <button class="copy-decrypted" onclick="copyText()">copy</button>
           </div>
         </div>
 
@@ -54,5 +56,11 @@
         2022</a
       >
     </div> -->
+
+    <!-- <style>
+      .footer {
+        position: fixed;
+      }
+    </style> -->
   </body>
 </html>
