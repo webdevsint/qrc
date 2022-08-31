@@ -6,7 +6,7 @@ const decoded = document.querySelector("#decoded");
 const decodedText = document.querySelector("#decoded-text");
 
 const fetchRequest = (formData) => {
-  fetch("http://api.qrserver.com/v1/read-qr-code/", {
+  fetch("https://api.qrserver.com/v1/read-qr-code/", {
     method: "POST",
     body: formData,
   })
@@ -29,6 +29,7 @@ const fetchRequest = (formData) => {
 
 form.onchange = function (e) {
   decoded.style.display = "none";
+  button.style.display = "block";
 
   const [file] = form.files;
   if (file) {
@@ -38,6 +39,8 @@ form.onchange = function (e) {
 };
 
 const submitHandler = () => {
+  decoded.style.display = "none";
+  
   if (form.files.length < 1) {
     alert("No files selected!");
   } else {

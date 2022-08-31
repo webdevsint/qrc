@@ -235,3 +235,8 @@ main button {
 #decoded {
   display: none;
 }
+
+
+.decode-btn {
+  display: none;
+}
