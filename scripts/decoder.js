@@ -4,6 +4,7 @@ const preview = document.querySelector(".qr-preview");
 const status = document.querySelector(".status");
 const decoded = document.querySelector("#decoded");
 const decodedText = document.querySelector("#decoded-text");
+const copyBtn = document.querySelector(".copy-decrypted");
 
 let cache;
 
@@ -25,9 +26,11 @@ const fetchRequest = (formData) => {
 
       if (result === null) {
         decodedText.innerHTML = "Not a valid QR Code!";
+        copyBtn.style.display - "none";
       } else {
         decodedText.innerHTML = result;
         cache = result;
+        copyBtn.style.display - "block";
       }
 
       button.classList.remove("disabled");
